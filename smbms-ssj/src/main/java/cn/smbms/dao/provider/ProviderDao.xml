@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.smbms.dao.provider.ProviderDao">
+    <insert id="addProvider" parameterType="Provider">
+		insert into smbms_provider (proCode,proName,proDesc,proContact,proPhone,
+		proAddress,proFax,createdBy,creationDate,businessLicense)
+		values(#{proCode},#{proName},#{proDesc},#{proContact},#{proPhone},
+		#{proAddress},#{proFax},#{createdBy},#{creationDate},#{businessLicense})
+	</insert>
+
+    <select id="getProviderList" parameterType="Provider" resultType="Provider">
+        select * from smbms_provider
+        <where>
+            <if test="proName!=null and proName!=''">and proName like concat('%',#{proName},'%')</if>
+            <if test="proCode!=null and proCode!=''">and proCode like concat('%',#{proCode},'%')</if>
+        </where>
+    </select>
+
+    <delete id="deleteProviderById" parameterType="String">
+		delete from smbms_provider where id=#{delId}
+	</delete>
+
+    <select id="getProviderById" parameterType="String" resultType="Provider">
+		select * from smbms_provider where id=#{id}
+	</select>
+
+    <update id="modifyProvider" parameterType="Provider">
+        update smbms_provider
+        <set>
+            <if test="proName!=null &amp;&amp; proName!=''">proName=#{proName},</if>
+            <if test="proDesc!=null &amp;&amp; proName!=''">proDesc=#{proDesc},</if>
+            <if test="proContact!=null &amp;&amp; proName!=''">proContact=#{proContact},</if>
+            <if test="proPhone!=null &amp;&amp; proName!=''">proPhone=#{proPhone},</if>
+            <if test="proAddress!=null &amp;&amp; proName!=''">proAddress=#{proAddress},</if>
+            <if test="proFax!=null &amp;&amp; proName!=''">proFax=#{proFax},</if>
+            <if test="modifyBy!=null &amp;&amp; proName!=''">modifyBy=#{modifyBy},</if>
+            <if test="modifyDate!=null &amp;&amp; proName!=''">modifyDate=#{modifyDate},</if>
+            <if test="proFax!=null &amp;&amp; proName!=''">proFax=#{proFax},</if>
+            <if test="businessLicense!=null &amp;&amp; businessLicense!=''">businessLicense=#{businessLicense},</if>
+        </set>
+        where id = #{id}
+    </update>
+
+</mapper>
