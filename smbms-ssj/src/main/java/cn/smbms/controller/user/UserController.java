@@ -1,7 +1,6 @@
 package cn.smbms.controller.user;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
