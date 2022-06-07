@@ -32,6 +32,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 8.5.76" level="application_server_libraries" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../software/apache-maven-3.8.4/mvn_repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
