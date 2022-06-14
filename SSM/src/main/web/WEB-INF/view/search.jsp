@@ -20,7 +20,7 @@
     <head>
         <!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
          -->
-        <script type="text/javascript" src="<c:url value="/resources/js/jquery-1.8.3.min.js"/>" ></script>
+        <script type="text/javascript" src="<c:url value="../resources/js/jquery-3.1.1.min.js"/>" ></script>
         <script>
             function show(){
                 $('#info').val('clicked');

@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
 
-        <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/login/style.css"/>" />
+        <link rel="stylesheet" type="text/css" href="<c:url value="../resources/css/login/style.css"/>" />
 
         <script type="application/x-javascript">
             addEventListener(
@@ -54,7 +54,7 @@
             </div>
             <div class="clear"></div>
             <div class="avtar">
-                <img src="<c:url value="/resources/img/login/avtar.png"/>" />
+                <img src="<c:url value="../resources/img/login/avtar.png"/>" />
             </div>
             <form action="${ctx}/doLogin" method="post">
                 <input type="text" class="text" name="username">

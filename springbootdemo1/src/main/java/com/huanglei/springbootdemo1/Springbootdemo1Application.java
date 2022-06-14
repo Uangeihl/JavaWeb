@@ -16,6 +16,7 @@ public class Springbootdemo1Application {
 
     @RequestMapping("/")
     String index(){
+//        return "Hello Spring Boot";
         return "author name is "+authorSettings.getName()+" and author age is "+authorSettings.getAge();
     }
     public static void main(String[] args) {
