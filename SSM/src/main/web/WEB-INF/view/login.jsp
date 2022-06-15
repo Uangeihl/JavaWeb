@@ -14,7 +14,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
+        <meta name="keywords"
+              content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,
+              Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
 
         <link rel="stylesheet" type="text/css" href="<c:url value="../resources/css/login/style.css"/>" />
 
