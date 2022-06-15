@@ -34,7 +34,8 @@ public class UserController {
 
     @RequestMapping(value = "/doLogin")
     //public String doLogin(HttpServletRequest request)
-    public String doLogin(@RequestParam("username") String userName, @RequestParam("password") String pwd, Map<String,Object> map)
+    public String doLogin(@RequestParam("username") String userName, @RequestParam("password") String pwd,
+                          Map<String,Object> map)
     {
         boolean authorized = userService.isAuthorizedUser(userName, pwd);
         if(authorized)
@@ -223,7 +224,6 @@ public class UserController {
     {
         return "search";
     }
-
 }
 
 
